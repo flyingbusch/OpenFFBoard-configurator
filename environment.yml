@@ -1,0 +1,22 @@
+name: openffboard
+# To create environment:
+# > mamba env create --file environment.yml
+# To update environment:
+# > mamba env update --file environment.yml --prune
+
+channels:
+  - defaults
+  - conda-forge
+
+dependencies:
+  - python = 3.10
+  - pyusb
+  - intelhex
+  - requests
+  - pip
+  - pip:
+    - pyqt6
+    - pyqt6-qt6
+    - pyqt6-charts
+    - pyqt6-charts-qt6
+    - pyqt6-sip
